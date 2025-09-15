@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Medicine</title>
+</head>
+<body>
+    <h1>Book Your Medicine</h1>
+    <form action="confirm.html" method="get">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="medicine">Medicine Name:</label><br>
+        <input type="text" id="medicine" name="medicine" required><br><br>
+
+        <label for="qty">Quantity (strips):</label><br>
+        <input type="number" id="qty" name="quantity" min="1" required><br><br>
+
+        <label for="delivery">Preferred Delivery Time:</label><br>
+        <select id="delivery" name="delivery">
+            <option value="morning">Morning (8am - 12pm)</option>
+            <option value="afternoon">Afternoon (12pm - 4pm)</option>
+            <option value="evening">Evening (4pm - 8pm)</option>
+        </select><br><br>
+
+        <label for="address">Delivery Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30" required></textarea><br><br>
+
+        <input type="submit" value="Confirm Booking">
+    </form>
+
+    <a href="medicines.html">← Back to Medicines</a>
+</body>
+</html>
